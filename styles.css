@@ -198,16 +198,16 @@ nav{
     text-transform: lowercase;
 }
 
-.activites-grid{
+.activities-grid{
     display: grid;
     grid-auto-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
 }
 
-.activites-grid-item{
+.activities-grid-item{
     height: 40rem;
     padding: 5rem;
-    /*color: #fafafa; */
+    color: #fafafa;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -216,7 +216,7 @@ nav{
     z-index: 1;
 }
 
-.activites-grid-item::before{
+.activities-grid-item::before{
     content: "";
     position: absolute;
     top: 0;
@@ -228,16 +228,35 @@ nav{
 }
 
 .star-gazing{
-    background: url('images/stars.jpg') center no-repeat;
+    background: url('images/stars.jpg');
+    background-size: cover;
 }
 
 .hiking{
-    background: url('images/hiking.jpg') center no-repeat;
+    background: url('images/hiking.jpg');
+    background-size: cover;
 }
 
 .camping{
-    background: url('images/camping.jpg') center no-repeat;
+    background: url('images/camping.jpg');
+    background-size: cover;
 }
+
+.activities-grid-item i{
+    font-size: 4rem;
+    color: #eb648c;
+}
+
+.activities-grid-item h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+
+
+
 
 
 
