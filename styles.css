@@ -36,7 +36,7 @@ section{
 }
 
 body{
-    margin: 0 0 8px;
+    margin: 1px;
     display: block;
 }
 
@@ -119,7 +119,7 @@ nav{
 .hero{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("images/header-bg.jpg") center no-repeat;
+    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("images/header-bg.jpg");
     background-size: cover;
     position: relative;
 }
@@ -131,7 +131,7 @@ nav{
     bottom: 0;
     width: 100%;
     height: 4.7rem;
-    background: url("images/wave-small.png") center no-repeat;
+    background: url("images/wave-small.png");
     background-size: cover;
 }
 
@@ -254,10 +254,74 @@ nav{
     margin: 2rem 0;
 }
 
+/* testimonals */
+.testimonals{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("images/testimonials-bg.jpg");
+    background-size: fixed;
+    position: relative;
+}
 
+.testimonals::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url("images/wave-small-reversed.png") center no-repeat;
+    background-size: cover;
+}
 
+.testimonal{
+    width: 100%;
+    color: #fafafa;
+    position: relative;
+    top: 100%;
+    text-align: center;
+}
 
+.testimonal-text-box{
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
 
+.testimonal-text-box i{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #eb648c;
+    opacity: .5;
+    /*z-index: -1;*/
+}
 
+.testimonal img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #eb648c;
+    margin-top: 75px;
+}
 
+/*Begin Adventures*/
+.adventure-grid{
+    display: grid;
+    grid-auto-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-bottom: 2rem;
+}
 
+.adventure-grid-item p{
+    color: rgba(0,0,0,.7);
+}
+
+footer{
+    padding: 2.5rem 0;
+    background-color: #d7d4ed;
+    text-align: center;
+    color: rgba(0,0,0,.7);
+}
